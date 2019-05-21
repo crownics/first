@@ -1,0 +1,94 @@
+$colors: (
+    primary: #134EBB,
+    secondary: #687283,
+    light-primary: #EDF0F9
+
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+    .header-wrapper{
+        height: 120px;
+        border-bottom: solid 1px color(secondary);
+
+        .nav-bar{
+            float: right;
+            margin-right: 100px;
+            margin-top: 44px;
+
+            .nav-list{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                .new-retro{
+                    float: left;
+                    padding: 10px;
+                    margin-left: 45px;
+                    font-family: SF UI Text;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: color(secondary);
+                }
+                .new-retro:hover{
+                    background: color(light-primary);
+                    border-radius: 42px;
+                    color: color(primary)
+                }
+
+                .add-schedule{
+                    float: left;
+                    padding: 10px;
+                    margin-left: 45px;
+                    font-family: SF UI Text;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: color(secondary);
+                }
+
+                .add-schedule:hover{
+                    background: color(light-primary);
+                    border-radius: 42px;
+                    color: color(primary)
+                }
+
+                .bell{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    background-color: color(primary);
+                    float: left;
+                    margin-left: 40px;
+                    margin-top: 10px;
+                }
+
+                .profile{
+                    float: left;
+                    padding: 10px;
+                    margin-left: 38px;
+                    font-family: SF UI Text;
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: color(secondary);
+
+                    .pic{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 20px;
+                        float: right;
+                        background: color(primary);
+                        margin-left: 5px;
+                    }
+                }
+
+                .profile:hover{
+                    background: color(light-primary);
+                    border-radius: 42px;
+                    color: color(primary)
+
+                }
+              }
+        }
+    }

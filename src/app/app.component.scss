@@ -1,0 +1,12 @@
+$colors: (
+    headers: darkblue,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+body{
+    overflow: hidden;
+    background-color: #F5F7FA;
+
+}
